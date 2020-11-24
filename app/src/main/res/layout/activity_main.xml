@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/youtube"
+        android:layout_width="460dp"
+        android:layout_height="482dp"
+        android:background="@drawable/focus_youtube"
+        app:layout_constraintBottom_toTopOf="@+id/video"
+        app:layout_constraintLeft_toRightOf="@+id/list"
+        app:layout_constraintRight_toLeftOf="@+id/EtherNet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="469dp"
+        android:layout_height="320dp"
+        android:background="@drawable/focus_setting"
+        app:layout_constraintBottom_toTopOf="@+id/AddRecycle"
+        app:layout_constraintLeft_toRightOf="@+id/playstore"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtherNet"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="460dp"
+        android:layout_height="482dp"
+        android:background="@drawable/focus_app"
+        app:layout_constraintBottom_toTopOf="@+id/miracast"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/youtube"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/wifi"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:background="@drawable/img_wifi"
+        app:layout_constraintBottom_toTopOf="@+id/setting"
+        app:layout_constraintLeft_toRightOf="@+id/EtherNet"
+        app:layout_constraintRight_toLeftOf="@+id/bluetooth"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluetooth"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:background="@drawable/img_bt"
+        app:layout_constraintBottom_toTopOf="@+id/setting"
+        app:layout_constraintLeft_toRightOf="@+id/wifi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="214dp"
+        android:layout_height="201dp"
+        android:background="@drawable/item_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/AddRecycle"
+        app:layout_constraintTop_toBottomOf="@+id/miracast" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/AddRecycle"
+        android:layout_width="1348dp"
+        android:layout_height="199dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/add"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <Button
+        android:id="@+id/EtherNet"
+        android:layout_width="460dp"
+        android:layout_height="482dp"
+        android:background="@drawable/focus_ethernet"
+        app:layout_constraintBottom_toTopOf="@+id/playstore"
+        app:layout_constraintLeft_toRightOf="@+id/youtube"
+        app:layout_constraintRight_toLeftOf="@id/wifi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/miracast"
+        android:layout_width="469dp"
+        android:layout_height="320dp"
+        android:background="@drawable/focus_eshare"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/video"
+        app:layout_constraintTop_toBottomOf="@+id/list" />
+
+    <Button
+        android:id="@+id/video"
+        android:layout_width="469dp"
+        android:layout_height="320dp"
+        android:background="@drawable/focus_video"
+        app:layout_constraintBottom_toTopOf="@+id/AddRecycle"
+        app:layout_constraintLeft_toRightOf="@+id/miracast"
+        app:layout_constraintRight_toLeftOf="@+id/playstore"
+        app:layout_constraintTop_toBottomOf="@+id/youtube" />
+
+    <Button
+        android:id="@+id/playstore"
+        android:layout_width="469dp"
+        android:layout_height="320dp"
+        android:background="@drawable/focus_playstore"
+        app:layout_constraintBottom_toTopOf="@+id/AddRecycle"
+        app:layout_constraintLeft_toRightOf="@id/video"
+        app:layout_constraintRight_toLeftOf="@id/setting"
+        app:layout_constraintTop_toBottomOf="@+id/EtherNet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
